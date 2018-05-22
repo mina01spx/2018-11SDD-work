@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Meters to Kilometers Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Type a value in the Meters field to convert the value to Kilometers:</p>
+
+<p>
+  <label>Meters</label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/1000;
+}
+</script>
+</body>
+</html>
+
+<html>
+<title>Celsius to Fahrenheit Temperature Converter</title>
+<body>
+
+<h2>Temperature Converter</h2>
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<title>Kilograms to Pounds Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+<p>Type a value in the Kilograms field to convert the value to Pounds:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Pounds: <span id="outputPounds"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputPounds").innerHTML=valNum*2.2046;
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<title>KPH to MPH Speed Converter</title>
+<body>
+
+<h2>Speed Converter</h2>
+<p>Type a value in the KPH field to convert the value to MPH:</p>
+
+<p>
+  <label>KPH</label>
+  <input id="inputKPH" type="number" placeholder="KPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+</p>
+<p>MPH: <span id="outputMPH"></span></p>
+
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputMPH").innerHTML=valNum/1.609344;
+}
+</script>
+
+</body>
+</html>
+
